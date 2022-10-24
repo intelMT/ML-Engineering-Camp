@@ -1,0 +1,10 @@
+service: "service.py:svc"
+labels:
+  owner: DrTan
+  project: MLZoomCamp
+include:
+- "*.py"
+python:
+  packages:
+    - xgboost
+    - sklearn 

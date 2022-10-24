@@ -1,0 +1,13 @@
+service: "service3.py:svc"
+labels:
+  owner: DrTan
+  project: MLZoomCamp
+include:
+- "service3.py"
+exclude:
+- "service1.py"
+- "service2.py"
+- "servoce4.py"
+python:
+  packages:
+    - sklearn 
