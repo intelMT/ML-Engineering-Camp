@@ -9,9 +9,9 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 
 RUN pipenv install --system --deploy
 
-COPY ["dictvec.bin", "xgboost_brazil_house.bin", "./"]
+ADD bin ./bin
 
-COPY ["sklearn_rf_brazil_house.bin", "predict.py", "./"]
+COPY ["predict.py", "./"]
 
 EXPOSE 9696
 
