@@ -9,6 +9,16 @@ More info available at [Kaggle repo](https://www.kaggle.com/datasets/rubenssjr/b
 
 As inflation soars, the prices keep changing, this applies to the rent values. This is part of what is called "concept drift." The dataset is from 2020, so the rent values is expected to be off real market values now. I think obtained predictions can further be adjusted for inflation, or specific inflation for civil building market, and any changes in taxes.
 
+## Dependency Management
+To train and run all the scripts, you should first install pipenv as: <br>
+`pip install pipenv` <br>
+
+Then, in the directory for the project, run:
+`pipenv install`
+
+This will create a virtual environment and install all needed libaries from `Pipfile` and `Pipfile.lock` provided in this repo. <br>
+Also, `bentofile.yaml` and `requirements.txt` files are constructed and provided if you want to use different dependency management software.
+
 ## Files
 ### Model and data files:
 Model files and embedding binaries are stored in `bin` folder. <br>
@@ -23,16 +33,6 @@ So, you can also train the same models with `pipenv run python train.py`
 ## Testing Locally
 In your `pipenv shell` run `python predict.py` and your Flask application runs in debug mode. <br>
 You can then run `python test.py` in another cli OR run `test_predict.ipynb` to see that the Flask application runs without any problem.
-
-## Dependency Management
-To train and run all the scripts, you should first install pipenv as: <br>
-`pip install pipenv` <br>
-
-Then, in the directory for the project, run:
-`pipenv install`
-
-This will create a virtual environment and install all needed libaries from `Pipfile` and `Pipfile.lock` provided in this repo. <br>
-Also, `bentofile.yaml` and `requirements.txt` files are constructed and provided if you want to use different dependency management software.
 
 ## Containerization and Docker Image
 `Dockerfile` is provided to create a docker image to both train and serve the ML service using gunicorn on a linux/amd64 image. <br>
