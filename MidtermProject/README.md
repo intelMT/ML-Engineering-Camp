@@ -22,7 +22,7 @@ So, you can also train the same models with `pipenv run python train.py`
 
 ## Testing Locally
 In your `pipenv shell` run `python predict.py` and your Flask application runs in debug mode. <br>
-You can then run `python test.py` in another cli to see that the Flask application runs without any problem.
+You can then run `python test.py` in another cli OR run `test_predict.ipynb` to see that the Flask application runs without any problem.
 
 ## Dependency Management
 To train and run all the scripts, you should first install pipenv as: <br>
