@@ -8,7 +8,7 @@ Dataset provides information such as the city and the area of house/apartment; t
 Also, there are monetary descriptors such as tax information (property, home owners association), fire insurance etc. available. <br>
 More info available at [Kaggle repo](https://www.kaggle.com/datasets/rubenssjr/brasilian-houses-to-rent?select=houses_to_rent_v2.csv)
 
-As inflatios soars, the prices keep changing, this applies to the rent values. This is part of what is called "concept drift." The dataset is from 2020, so the rent values is expected to be off real market values now. I think obtained predictions can further be adjusted for inflation, or specific inflation for civil building market, and any changes in taxes.
+As inflation soars, the prices keep changing, this applies to the rent values. This is part of what is called "concept drift." The dataset is from 2020, so the rent values is expected to be off real market values now. I think obtained predictions can further be adjusted for inflation, or specific inflation for civil building market, and any changes in taxes.
 
 ## Files
 
